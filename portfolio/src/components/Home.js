@@ -1,6 +1,12 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faFacebook,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -17,19 +23,19 @@ const Home = () => {
       </SecondaryNav>
       <LogoDiv>
         <Logo href="https://github.com/dvonpingel" target="_blank">
-          <i class="fab fa-github"></i>
+          <FontAwesomeIcon icon={faGithub} />
         </Logo>
         <LinkedLogo
           href="https://www.linkedin.com/in/dartagnan-von-pingel/"
           target="_blank"
         >
-          <i class="fab fa-linkedin-in"></i>
+          <FontAwesomeIcon icon={faLinkedin} />
         </LinkedLogo>
         <Logo
           href="https://www.facebook.com/dartagnan.vonpingel"
           target="_blank"
         >
-          <i class="fab fa-facebook-f"></i>
+          <FontAwesomeIcon icon={faFacebook} />
         </Logo>
       </LogoDiv>
     </div>
@@ -128,7 +134,7 @@ const Logo = styled.a`
 `;
 
 const LinkedLogo = styled(Logo)`
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 `;
 
 export default Home;
