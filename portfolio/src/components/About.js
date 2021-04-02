@@ -51,6 +51,44 @@ const About = () => {
         after graduating at Lambda. I've got plenty to learn, given that this
         industry will forever be developing, and I'm eager to keep going.
       </Paragraph>
+      <Experience>
+        <Title2>EXPERIENCE</Title2>
+        <ListDiv>
+          <ExperienceTitle>Front End</ExperienceTitle>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind</li>
+            <li>Vanilla JS</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Styled Components</li>
+          </ul>
+        </ListDiv>
+        <ListDiv>
+          <ExperienceTitle>Back End</ExperienceTitle>
+          <ul>
+            <li>Node</li>
+            <li>Express</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>JSON</li>
+          </ul>
+        </ListDiv>
+        <ListDiv>
+          <ExperienceTitle>Other Tech/Libraries</ExperienceTitle>
+          <ul>
+            <li>Git/GitHub</li>
+            <li>SQLite3</li>
+            <li>Jest</li>
+            <li>RTL</li>
+            <li>Cypress</li>
+            <li>Postman</li>
+            <li>RESTful APIs</li>
+            <li>Insomnia</li>
+          </ul>
+        </ListDiv>
+      </Experience>
     </div>
   );
 };
@@ -138,6 +176,59 @@ const Miss = styled(Lambda)`
 `;
 const TedX = styled(Lambda)`
   text-decoration: none;
+`;
+
+const Experience = styled.div`
+  margin: 0 auto 50px auto;
+  border: 1px solid #ee2f56;
+  background: #ee2f56;
+  width: 500px;
+  padding: 0;
+  opacity: 0;
+  animation: ${kf} 1s forwards;
+  animation-delay: 0.4s;
+  border-radius: 15px;
+`;
+
+const ListDiv = styled.div`
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto;
+  opacity: 0;
+  animation: ${kf} 1s forwards;
+  animation-delay: 0.7s;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+
+    li {
+      font-size: 1rem;
+      margin: 5px 10px 5px 10px;
+    }
+  }
+`;
+
+const Title2 = styled(Title)`
+  animation-delay: 0.5s;
+  margin: 25px 0 -20px 0;
+`;
+
+const ExperienceTitle = styled.h3`
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+  padding: 5px;
 `;
 
 export default About;

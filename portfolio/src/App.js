@@ -6,6 +6,8 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 
+const date = new Date();
+
 function App() {
   return (
     <>
@@ -25,6 +27,11 @@ function App() {
 
       <Route exact path="/">
         <Home />
+        <Footer>
+          <Copyright>
+            &copy; {date.getFullYear()} D'Artagnan von Pingel
+          </Copyright>
+        </Footer>
       </Route>
 
       <Route path="/about">
@@ -37,6 +44,19 @@ function App() {
     </>
   );
 }
+
+const Footer = styled.div`
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(11, 23, 37);
+`;
+const Copyright = styled.p`
+  font-size: 0.8rem;
+  width: 175px;
+  margin: 10px auto;
+`;
 
 const kf = keyframes`
     100% {

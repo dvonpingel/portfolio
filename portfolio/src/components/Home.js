@@ -10,7 +10,7 @@ import {
 
 const Home = () => {
   return (
-    <div>
+    <MainContent>
       <Title>
         hello! i'm <Br />
         <Bigger>D'Artagnan von Pingel</Bigger>
@@ -38,9 +38,14 @@ const Home = () => {
           <FontAwesomeIcon icon={faFacebook} />
         </Logo>
       </LogoDiv>
-    </div>
+    </MainContent>
   );
 };
+
+const MainContent = styled.div`
+  /* width: 100%;
+  height: 80vh; */
+`;
 
 const kf = keyframes`
     100% {
