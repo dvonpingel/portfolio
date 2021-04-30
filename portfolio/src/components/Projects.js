@@ -69,7 +69,7 @@ const Projects = () => {
         <Project1 href="https://front-end-bice-phi.vercel.app/" target="_blank">
           Water My Plants Website
         </Project1>{" "}
-        (3/5/2021){" "}
+        (4/2/2021){" "}
         <SourceCode
           href="https://github.com/TT41-Build-Week-Water-My-Plants/backend-dartagnan"
           target="_blank"
@@ -91,7 +91,7 @@ const Projects = () => {
         >
           Source Code for This Portfolio
         </Project1>{" "}
-        (Updated last 3/20/2021) <Br />
+        (Updated last 4/30/2021) <Br />
         <NoteParagraph>
           ^ Just in case you wanted to see how I styled this whole website and
           the way I structured my components! Work is all my own and I'm just
