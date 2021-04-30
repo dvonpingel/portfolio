@@ -66,6 +66,25 @@ const Projects = () => {
       </Paragraph2>
       <Paragraph3>
         •{" "}
+        <Project1 href="https://front-end-bice-phi.vercel.app/" target="_blank">
+          Water My Plants Website
+        </Project1>{" "}
+        (3/5/2021){" "}
+        <SourceCode
+          href="https://github.com/TT41-Build-Week-Water-My-Plants/backend-dartagnan"
+          target="_blank"
+        >
+          SOURCE CODE
+        </SourceCode>
+        <Br />
+        <NoteParagraph>
+          ^ Build week project at Lambda School. Built in a team, I was in
+          charge of the entire backend, creating the database and REST API to be
+          consumed by the front end.
+        </NoteParagraph>
+      </Paragraph3>
+      <Paragraph4>
+        •{" "}
         <Project1
           href="https://github.com/dvonpingel/portfolio"
           target="_blank"
@@ -78,7 +97,7 @@ const Projects = () => {
           the way I structured my components! Work is all my own and I'm just
           having a lot of fun with it!
         </NoteParagraph>
-      </Paragraph3>
+      </Paragraph4>
     </div>
   );
 };
@@ -130,6 +149,11 @@ const Paragraph2 = styled(Paragraph)`
 
 const Paragraph3 = styled(Paragraph)`
   animation-delay: 0.6s;
+  margin: 50px 0;
+`;
+
+const Paragraph4 = styled(Paragraph)`
+  animation-delay: 0.8s;
   margin: 50px 0;
 `;
 
