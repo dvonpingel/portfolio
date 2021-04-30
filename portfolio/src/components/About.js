@@ -58,7 +58,6 @@ const About = () => {
           <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li>Tailwind</li>
             <li>Vanilla JS</li>
             <li>React</li>
             <li>Redux</li>
@@ -76,10 +75,11 @@ const About = () => {
           </ul>
         </ListDiv>
         <ListDiv>
-          <ExperienceTitle>Other Tech/Libraries</ExperienceTitle>
+          <ExperienceTitle>Other Tech/Languages</ExperienceTitle>
           <ul>
             <li>Git/GitHub</li>
             <li>SQLite3</li>
+            <li>Python</li>
             <li>Jest</li>
             <li>RTL</li>
             <li>Cypress</li>
