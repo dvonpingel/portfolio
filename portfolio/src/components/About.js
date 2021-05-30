@@ -9,14 +9,14 @@ const About = () => {
       <Paragraph>
         Hello! I'm D'Artagnan von Pingel.
         <Br />
-        I'm a web developer from Lehi, UT, and I'm currently studying full stack
-        at{" "}
+        I'm a web developer from Lehi, UT, and I recently graduated learning
+        full stack from{" "}
         <Lambda href="https://lambdaschool.com/" target="_blank">
           <Span>Lambda School</Span>
         </Lambda>
-        . I've been having a lot of fun learning how to design clean and
-        functional web pages using React, Javascript, HTML, and CSS. Check out
-        some of my <Project to="/projects">projects</Project> here!
+        . I've had a lot of fun learning how to design clean and functional web
+        pages using React, Javascript, HTML, and CSS. Check out some of my{" "}
+        <Project to="/projects">projects</Project> here!
         <Br />
         Before making the decision to switch gears and get into full stack, I
         did a lot of work making various videos and animations. I had the
@@ -47,9 +47,9 @@ const About = () => {
         discipline, organization, and I gained a sustainable strategy for time
         management, as well as a solid work ethic.
         <Br />
-        At 20 years old I feel well prepared to move forward in this industry
-        after graduating at Lambda. I've got plenty to learn, given that this
-        industry will forever be developing, and I'm eager to keep going.
+        At 20 years old I feel well prepared to move forward in this industry.
+        That being said I've still got plenty to learn, given that this industry
+        will forever be developing, and I'm eager to keep going.
       </Paragraph>
       <Experience>
         <Title2>EXPERIENCE</Title2>

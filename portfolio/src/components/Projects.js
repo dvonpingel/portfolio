@@ -38,7 +38,7 @@ const Projects = () => {
         </SourceCode>
         <Br />
         <NoteParagraph>
-          ^^ Created these simple projects as an assignment from lambda,
+          ^^ Created these simple projects as part of my program at lambda,
           practicing communication between API and the Front End
         </NoteParagraph>
       </Paragraph>
@@ -59,8 +59,8 @@ const Projects = () => {
         </SourceCode>
         <Br />
         <NoteParagraph>
-          ^ Build week project at Lambda School. Built in a team, I was in
-          charge of the 'client' route of the website front end, including
+          ^ Built in an Agile team of front-end and back-end developers. I was
+          in charge of the 'client' route of the website front end, including
           styling, creating onboard screens and routing.
         </NoteParagraph>
       </Paragraph2>
@@ -78,9 +78,33 @@ const Projects = () => {
         </SourceCode>
         <Br />
         <NoteParagraph>
-          ^ Build week project at Lambda School. Built in a team, I was in
-          charge of the entire backend, creating the database and REST API to be
-          consumed by the front end.
+          ^ Built in an Agile development team. I was in charge of the entire
+          backend, creating the database and REST API endpoints to be consumed
+          by the front end.
+        </NoteParagraph>
+      </Paragraph3>
+      <Paragraph3>
+        •{" "}
+        <Project1
+          href="https://main.d2btcjpp4e0k3s.amplifyapp.com/login"
+          target="_blank"
+        >
+          Family Promise: Service Tracker
+        </Project1>{" "}
+        (5/28/2021){" "}
+        <SourceCode
+          href="https://github.com/TT41-Build-Week-Water-My-Plants/backend-dartagnan"
+          target="_blank"
+        >
+          SOURCE CODE
+        </SourceCode>
+        <Br />
+        <NoteParagraph>
+          ^ Built in a cross-functional Agile development team. I was solely
+          responsible for optimizing the website design to be both reactive and
+          adaptive to work just as smooth on a tablet as it would a desktop. I
+          also refactored the navigation bar code, and helped build out redux
+          actions/reducers to properly consume API data for datatables used.
         </NoteParagraph>
       </Paragraph3>
       <Paragraph4>
@@ -91,7 +115,7 @@ const Projects = () => {
         >
           Source Code for This Portfolio
         </Project1>{" "}
-        (Updated last 4/30/2021) <Br />
+        (Updated last 5/29/2021) <Br />
         <NoteParagraph>
           ^ Just in case you wanted to see how I styled this whole website and
           the way I structured my components! Work is all my own and I'm just
