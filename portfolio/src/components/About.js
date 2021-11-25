@@ -59,10 +59,10 @@ const About = () => {
             <ul>
               <li>HTML</li>
               <li>CSS</li>
-              <li>Vanilla JS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>React</li>
               <li>Redux</li>
-              <li>Styled Components</li>
             </ul>
           </ListDiv>
           <ListDiv>
