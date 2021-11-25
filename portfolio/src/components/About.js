@@ -72,7 +72,6 @@ const About = () => {
               <li>Express</li>
               <li>SQL</li>
               <li>PostgreSQL</li>
-              <li>JSON</li>
             </ul>
           </ListDiv>
           <ListDiv>
