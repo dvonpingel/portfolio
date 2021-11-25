@@ -50,7 +50,7 @@ const Paragraph = styled.p`
   color: white;
   font-family: "Cairo", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.2px;
   word-spacing: 1px;

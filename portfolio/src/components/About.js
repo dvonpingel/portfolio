@@ -6,89 +6,91 @@ const About = () => {
   return (
     <div>
       <Title>ABOUT ME</Title>
-      <Paragraph>
-        Hello! I'm D'Artagnan von Pingel.
-        <Br />
-        I'm a web developer from Lehi, UT, and I recently graduated learning
-        full stack from{" "}
-        <Lambda href="https://lambdaschool.com/" target="_blank">
-          <Span>Lambda School</Span>
-        </Lambda>
-        . I've had a lot of fun learning how to design clean and functional web
-        pages using React, Javascript, HTML, and CSS. Check out some of my{" "}
-        <Project to="/projects">projects</Project> here!
-        <Br />
-        Before making the decision to switch gears and get into full stack, I
-        did a lot of work making various videos and animations. I had the
-        pleasure of working with companies such as{" "}
-        <Swig href="https://www.swignsweets.com/" target="_blank">
-          Swig
-        </Swig>
-        ,{" "}
-        <Aptive href="https://www.goaptive.com/" target="_blank">
-          Aptive Environmental
-        </Aptive>
-        ,{" "}
-        <Savory href="https://savory.mercatopartners.com/" target="_blank">
-          Savory
-        </Savory>
-        ,{" "}
-        <Miss href="https://missutah.org/" target="_blank">
-          Miss Utah Organization
-        </Miss>
-        ,{" "}
-        <TedX
-          href="https://www.ted.com/about/programs-initiatives/tedx-program"
-          target="_blank"
-        >
-          TedX
-        </TedX>
-        , and many more. Through these experiences I learned a lot about self
-        discipline, organization, and I gained a sustainable strategy for time
-        management, as well as a solid work ethic.
-        <Br />
-        At 20 years old I feel well prepared to move forward in this industry.
-        That being said I've still got plenty to learn, given that this industry
-        will forever be developing, and I'm eager to keep going.
-      </Paragraph>
-      <Experience>
-        <Title2>EXPERIENCE</Title2>
-        <ListDiv>
-          <ExperienceTitle>Front End</ExperienceTitle>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Vanilla JS</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Styled Components</li>
-          </ul>
-        </ListDiv>
-        <ListDiv>
-          <ExperienceTitle>Back End</ExperienceTitle>
-          <ul>
-            <li>Node</li>
-            <li>Express</li>
-            <li>SQL</li>
-            <li>PostgreSQL</li>
-            <li>JSON</li>
-          </ul>
-        </ListDiv>
-        <ListDiv>
-          <ExperienceTitle>Other Tech/Languages</ExperienceTitle>
-          <ul>
-            <li>Git/GitHub</li>
-            <li>SQLite3</li>
-            <li>Python</li>
-            <li>Jest</li>
-            <li>RTL</li>
-            <li>Cypress</li>
-            <li>Postman</li>
-            <li>RESTful APIs</li>
-            <li>Insomnia</li>
-          </ul>
-        </ListDiv>
-      </Experience>
+      <div className="experience-section">
+        <Paragraph>
+          Hello! I'm D'Artagnan von Pingel.
+          <Br />
+          I'm a web developer from Lehi, UT, and I'm a Full Stack Web graduate
+          from{" "}
+          <Lambda href="https://www.bloomtech.com/" target="_blank">
+            <Span>BloomTech</Span>
+          </Lambda>{" "}
+          (Formerly known as Lambda School). I've really enjoyed learning how to
+          design clean, responsive, and functional web pages using React,
+          Javascript, Typescript, HTML, CSS, and many more libraries. Check out
+          some of my <Project to="/projects">projects</Project> here!
+          <Br />
+          Before making the decision to switch gears and get into full stack, I
+          did a lot of work making various videos and animations. I had the
+          pleasure of working with companies such as{" "}
+          <Swig href="https://www.swignsweets.com/" target="_blank">
+            Swig
+          </Swig>
+          ,{" "}
+          <Aptive href="https://www.goaptive.com/" target="_blank">
+            Aptive Environmental
+          </Aptive>
+          ,{" "}
+          <Savory href="https://savory.mercatopartners.com/" target="_blank">
+            Savory
+          </Savory>
+          ,{" "}
+          <Miss href="https://missutah.org/" target="_blank">
+            Miss Utah Organization
+          </Miss>
+          ,{" "}
+          <TedX
+            href="https://www.ted.com/about/programs-initiatives/tedx-program"
+            target="_blank"
+          >
+            TedX
+          </TedX>
+          , and many more. Through these experiences I learned a lot about self
+          discipline, organization, and I gained a sustainable strategy for time
+          management, as well as a solid work ethic.
+          <Br />I just finished my first year of web development, and I haven't
+          looked back once. I have a burning passion for this field and I'm
+          excited to see what is next for it!
+        </Paragraph>
+        <Experience>
+          <Title2>EXPERIENCE</Title2>
+          <ListDiv>
+            <ExperienceTitle>Front End</ExperienceTitle>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vanilla JS</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Styled Components</li>
+            </ul>
+          </ListDiv>
+          <ListDiv>
+            <ExperienceTitle>Back End</ExperienceTitle>
+            <ul>
+              <li>Node</li>
+              <li>Express</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>JSON</li>
+            </ul>
+          </ListDiv>
+          <ListDiv>
+            <ExperienceTitle>Other Tech/Languages</ExperienceTitle>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>SQLite3</li>
+              <li>Python</li>
+              <li>Jest</li>
+              <li>RTL</li>
+              <li>Cypress</li>
+              <li>Postman</li>
+              <li>RESTful APIs</li>
+              <li>Insomnia</li>
+            </ul>
+          </ListDiv>
+        </Experience>
+      </div>
     </div>
   );
 };
@@ -121,9 +123,9 @@ const Paragraph = styled.p`
   animation-delay: 0.2s;
   color: white;
   font-family: "Cairo", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  width: 600px;
+  width: 450px;
   margin: 50px auto;
   letter-spacing: 0.2px;
   word-spacing: 1px;
@@ -179,10 +181,10 @@ const TedX = styled(Lambda)`
 `;
 
 const Experience = styled.div`
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
   border: 1px solid #ee2f56;
   background: #ee2f56;
-  width: 500px;
+  width: 450px;
   padding: 0;
   opacity: 0;
   animation: ${kf} 1s forwards;
@@ -192,7 +194,7 @@ const Experience = styled.div`
 
 const ListDiv = styled.div`
   color: white;
-  width: 500px;
+  width: 450px;
   margin: 0 auto;
   display: flex;
   justify-content: center;

@@ -37,12 +37,25 @@ const projectList = [
     date: "(6/28/21 - Current)",
     projectHref: "https://www.useshelf.com/",
     delay: "0.8s",
-    explanation:
-      "A website at Pattern for Ecommerce Logistics and Fulfillment for warehouses across the globe. Utilizes the most up to date TypeScript and React best-practices.",
+    explanation: (
+      <div>
+        A website at{" "}
+        <a
+          href="https://pattern.com/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#ee2f56" }}
+        >
+          Pattern
+        </a>{" "}
+        for Ecommerce Logistics and Fulfillment for warehouses across the globe.
+        Utilizes the most up to date TypeScript and React best-practices.
+      </div>
+    ),
   },
   {
     title: "Source Code for This Portfolio",
-    date: "(Updated last 9/24/2021)",
+    date: "(Updated last 11/24/2021)",
     srcHref: "https://github.com/dvonpingel/portfolio",
     delay: "1s",
     explanation:
@@ -52,7 +65,7 @@ const projectList = [
 
 const Projects = () => {
   return (
-    <div>
+    <div className="projects-section">
       <Title>MY PROJECTS</Title>
       {projectList.map((project) => (
         <Project
