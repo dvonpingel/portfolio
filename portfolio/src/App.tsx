@@ -1,48 +1,41 @@
-import "./App.css";
-import React from "react";
-import { Link, Route } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
-import About from "./components/About";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
+import './App.css'
+import React from 'react'
+import { Link, Route } from 'react-router-dom'
+import styled, { keyframes } from 'styled-components'
+import About from './components/About'
+import Home from './components/Home'
+import Projects from './components/Projects'
+import moment from 'moment'
 
-const date = new Date();
-
-function App() {
+const App = () => {
   return (
     <>
       <Header>
         <NavBar>
-          <div>
-            <Nav to="/">Home</Nav>
-          </div>
-          <div>
-            <Nav to="/about">About</Nav>
-          </div>
-          <div>
-            <Nav to="/projects">Projects</Nav>
-          </div>
+          <Nav to='/'>Home</Nav>
+          <Nav to='/about'>About</Nav>
+          <Nav to='/projects'>Projects</Nav>
         </NavBar>
       </Header>
 
-      <Route exact path="/">
+      <Route exact path='/'>
         <Home />
         <Footer>
           <Copyright>
-            &copy; {date.getFullYear()} D'Artagnan von Pingel
+            &copy; {moment().format('YYYY')} D'Artagnan von Pingel
           </Copyright>
         </Footer>
       </Route>
 
-      <Route path="/about">
+      <Route path='/about'>
         <About />
       </Route>
 
-      <Route path="/projects">
+      <Route path='/projects'>
         <Projects />
       </Route>
     </>
-  );
+  )
 }
 
 const Footer = styled.div`
@@ -51,19 +44,19 @@ const Footer = styled.div`
   bottom: 0;
   width: 100%;
   background-color: rgb(11, 23, 37);
-`;
+`
 const Copyright = styled.p`
   font-size: 0.8rem;
   width: 175px;
   margin: 10px auto;
-`;
+`
 
 const kf = keyframes`
     100% {
         opacity: 1;
         transform: scale(1);
     }
-`;
+`
 
 const NavBar = styled.div`
   display: flex;
@@ -73,14 +66,14 @@ const NavBar = styled.div`
   align-items: center;
   margin: 0 auto;
   box-sizing: border-box;
-`;
+`
 
 const Header = styled.div`
   width: 100%;
   height: 100px;
   background-color: #465362;
   box-sizing: border-box;
-`;
+`
 
 const Nav = styled(Link)`
   opacity: 0;
@@ -89,14 +82,14 @@ const Nav = styled(Link)`
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 700;
   transition: 0.4s;
   &:hover {
     color: white;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 2px;
@@ -111,6 +104,6 @@ const Nav = styled(Link)`
     visibility: visible;
     transform: scaleX(1);
   }
-`;
+`
 
-export default App;
+export default App
