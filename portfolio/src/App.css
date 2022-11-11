@@ -1,3 +1,15 @@
 body {
   background-color: #172331;
 }
+
+.experience-section {
+  display: flex;
+  margin: 32px auto;
+  width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-section {
+  padding: 0 0 50px 0;
+}
